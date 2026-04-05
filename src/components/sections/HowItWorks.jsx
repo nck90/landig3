@@ -30,14 +30,14 @@ const HowItWorks = () => {
           >
             <div className="w-64 h-64 bg-white rounded-full toss-shadow flex items-center justify-center p-8 mb-10 border border-surface-200">
                <div className="flex flex-col items-center gap-4">
-                  <div className="w-16 h-16 bg-surface-900 rounded-full flex items-center justify-center text-white font-extrabold text-2xl">
-                     git
+                  <div className="w-16 h-16 bg-surface-100 rounded-full flex items-center justify-center text-brand-600 font-extrabold text-2xl">
+                     ⚡️
                   </div>
-                  <div className="font-bold text-surface-900">GitHub API 연동</div>
+                  <div className="font-bold text-surface-900">기능 개발 감지</div>
                </div>
             </div>
-            <h4 className="text-2xl font-extrabold heading-tight mb-4">1. 개발 저장소 연결</h4>
-            <p className="text-surface-500 font-medium leading-relaxed">개발사가 코드를 업로드하는<br/>GitHub 저장소를 연동합니다.</p>
+            <h4 className="text-2xl font-extrabold heading-tight mb-4">1. 개발 진행상황 포착</h4>
+            <p className="text-surface-500 font-medium leading-relaxed">개발팀이 새로운 기능을 작업하면<br/>시스템이 이를 즉시 감지합니다.</p>
           </motion.div>
 
           {/* Step 2 */}
@@ -56,8 +56,8 @@ const HowItWorks = () => {
                   <div className="font-bold text-surface-900 text-center">비즈니스 통역 엔진</div>
                </div>
             </div>
-            <h4 className="text-2xl font-extrabold heading-tight mb-4 text-brand-600">2. 일상어로 번역</h4>
-            <p className="text-surface-500 font-medium leading-relaxed">어려운 기술 용어들을 AI가 즉시<br/>비개발자의 언어로 번역해 줍니다.</p>
+            <h4 className="text-2xl font-extrabold heading-tight mb-4 text-brand-600">2. 일상어로 자동 번역</h4>
+            <p className="text-surface-500 font-medium leading-relaxed">복잡한 작업 내역을 AI가 분석하여<br/>이해하기 쉬운 알림으로 바꿔줍니다.</p>
           </motion.div>
 
           {/* Step 3 */}
@@ -71,12 +71,11 @@ const HowItWorks = () => {
             <div className="w-64 h-64 bg-white rounded-full toss-shadow flex items-center justify-center p-8 mb-10 border border-surface-200">
                <div className="flex flex-col items-center gap-4 w-full">
                   <div className="w-full h-8 bg-surface-100 rounded-lg"></div>
-                  <div className="w-full h-8 bg-surface-100 rounded-lg"></div>
-                  <div className="w-full h-8 bg-surface-100 rounded-lg"></div>
+                  <div className="w-full h-24 bg-surface-100 rounded-lg flex items-center justify-center text-xs text-surface-400 font-bold border border-brand-200 border-dashed">UI Snapshot</div>
                </div>
             </div>
-            <h4 className="text-2xl font-extrabold heading-tight mb-4">3. 투명한 대시보드</h4>
-            <p className="text-surface-500 font-medium leading-relaxed">마일스톤 예측, 시각적 스냅샷(VRT)을<br/>대시보드에서 편안하게 확인하세요.</p>
+            <h4 className="text-2xl font-extrabold heading-tight mb-4">3. С냅샷 시각화 확인</h4>
+            <p className="text-surface-500 font-medium leading-relaxed">완성된 결과물을 실제 화면 이미지로<br/>제공받아, 직관적으로 검수합니다.</p>
           </motion.div>
 
         </div>

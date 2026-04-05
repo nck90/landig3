@@ -15,7 +15,7 @@ const Hero = () => {
            transition={{ type: "spring", stiffness: 300, damping: 25, duration: 0.5 }}
            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white toss-shadow mb-8 font-bold text-[14px] text-surface-600 border border-surface-200"
         >
-          단절된 IT 외주 소통을 위한 완벽한 해결책
+          비전공자 클라이언트를 위한 가장 쉬운 외주 관리 솔루션
         </motion.div>
 
         <motion.h1 
@@ -24,8 +24,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl md:text-6xl lg:text-[72px] font-extrabold heading-tight leading-[1.15] mb-8 tracking-tighter"
         >
-          코드 한 줄 몰라도,<br />
-          <span className="text-brand-500">완벽하게 통제되는 외주 개발</span>
+          개발 지식이 전혀 없어도,<br />
+          <span className="text-brand-500">완벽하게 통제되는 프로젝트</span>
         </motion.h1>
 
         <motion.p 
@@ -34,8 +34,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-xl md:text-2xl text-surface-500 mb-12 subheading-tight max-w-3xl mx-auto font-medium"
         >
-          개발팀이 작업한 코드를 경영진의 언어로 실시간 요약합니다.<br className="hidden md:block"/>
-          진행 상황을 묻지 않아도 먼저 보여주는 가장 투명한 프로젝트 관리.
+          기능이 개발되는 즉시, AI가 진행 상황을 일상어로 통역해 알려드립니다.<br className="hidden md:block"/>
+          결과를 스냅샷 이미지로 직접 확인하는 가장 직관적인 소통.
         </motion.p>
 
         <motion.div 

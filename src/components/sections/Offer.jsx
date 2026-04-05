@@ -77,7 +77,7 @@ const Offer = () => {
                 <ul className="flex flex-col gap-6 mb-12">
                    <li className="flex flex-col sm:flex-row sm:items-center gap-4 border-b border-white/20 pb-6">
                      <span className="w-10 h-10 rounded-full bg-white text-brand-600 flex items-center justify-center font-bold text-lg flex-shrink-0">✓</span>
-                     <span className="text-xl font-medium text-white">단 10초 만에 완료되는 GitHub 동기화</span>
+                     <span className="text-xl font-medium text-white">개발팀의 작업 내역 실시간 자동 감지</span>
                    </li>
                    <li className="flex flex-col sm:flex-row sm:items-center gap-4 border-b border-white/20 pb-6">
                      <span className="w-10 h-10 rounded-full bg-white text-brand-600 flex items-center justify-center font-bold text-lg flex-shrink-0">✓</span>

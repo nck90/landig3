@@ -61,7 +61,7 @@ const Pricing = () => {
             <ul className="flex flex-col gap-5 mb-12 flex-1">
               <li className="flex items-center gap-4 text-lg font-medium text-surface-700">
                 <div className="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-sm font-bold">✓</div>
-                단일 GitHub 저장소 연동 지원
+                진행 중인 외주 개발 프로젝트 연동 지원
               </li>
               <li className="flex items-center gap-4 text-lg font-medium text-surface-700">
                 <div className="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-sm font-bold">✓</div>
