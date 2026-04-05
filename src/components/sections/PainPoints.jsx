@@ -52,12 +52,15 @@ const PainPoints = () => {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: idx * 0.15, type: "spring", stiffness: 100, damping: 20 }}
               whileHover={{ y: -8, transition: { duration: 0.2 } }}
-              className="px-10 py-12 bg-white/80 backdrop-blur-xl rounded-[40px] toss-shadow border border-white/60 flex flex-col relative overflow-hidden group"
+              className="px-10 py-12 bg-white/80 backdrop-blur-xl rounded-[40px] toss-shadow border border-white/60 flex flex-col relative overflow-hidden group hover:shadow-[0_20px_60px_rgba(59,130,246,0.12)] transition-shadow duration-500"
             >
+              {/* Top accent gradient line */}
+              <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-brand-400 via-brand-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
               {/* Subtle hover gradient inside card */}
               <div className="absolute inset-0 bg-gradient-to-br from-brand-50/0 to-brand-100/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
-              <div className="w-16 h-16 rounded-full bg-surface-50 flex items-center justify-center mb-8 flex-shrink-0 text-3xl font-extrabold text-brand-500 border border-surface-100 shadow-sm relative z-10">
+              <div className="w-16 h-16 rounded-full bg-surface-50 flex items-center justify-center mb-8 flex-shrink-0 text-3xl font-extrabold text-brand-500 border border-surface-100 shadow-sm relative z-10 transition-all duration-500 group-hover:bg-brand-500 group-hover:text-white group-hover:rotate-[360deg] group-hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]">
                 {idx + 1}
               </div>
               <h4 className="text-[26px] font-extrabold heading-tight mb-6 tracking-tight leading-snug relative z-10 text-surface-900">{prob.title}</h4>

@@ -29,8 +29,8 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-          <div className="flex items-center gap-2 flex-shrink-0 cursor-pointer">
-            <div className="w-9 h-9 bg-brand-500 rounded-full flex items-center justify-center text-white font-extrabold text-xl tracking-tighter">C</div>
+          <div className="flex items-center gap-2 flex-shrink-0 cursor-pointer group">
+            <div className="w-9 h-9 bg-brand-500 rounded-full flex items-center justify-center text-white font-extrabold text-xl tracking-tighter transition-all duration-500 group-hover:rotate-12 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]">C</div>
             <span className={`font-extrabold text-2xl tracking-tighter text-surface-900`}>
               Commitly
             </span>
@@ -55,7 +55,7 @@ const Navbar = () => {
             </a>
             <a
               href="#contact"
-              className="bg-brand-500 text-white px-6 py-2.5 rounded-full font-bold text-[15px] transition-all hover:bg-brand-600 hover:scale-105 active:scale-95"
+              className="bg-brand-500 text-white px-6 py-2.5 rounded-full font-bold text-[15px] transition-all hover:bg-brand-600 hover:scale-105 active:scale-95 animate-cta-glow"
             >
               무료 도입 진단
             </a>

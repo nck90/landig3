@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
+  // CountDown animation: 12% -> 5% -> 0%
+  const [delayPercent, setDelayPercent] = useState(12);
+  useEffect(() => {
+    const t1 = setTimeout(() => setDelayPercent(5), 2200);
+    const t2 = setTimeout(() => setDelayPercent(0), 3000);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
+  }, []);
+
   return (
     <section className="relative min-h-[90vh] flex flex-col items-center justify-start pt-36 pb-20 overflow-hidden">
       {/* Soft gradient background characteristic of Toss/Apple */}
@@ -80,7 +88,7 @@ const Hero = () => {
                <div className="col-span-2 bg-surface-50/50 rounded-[32px] p-8 text-left border border-white">
                   <div className="flex justify-between items-center mb-6">
                      <h4 className="font-extrabold text-surface-900 text-xl tracking-tight">실시간 통역 로그</h4>
-                     <span className="bg-brand-50 text-brand-600 font-bold px-4 py-2 rounded-full text-xs">업데이트 됨</span>
+                     <span className="bg-brand-50 text-brand-600 font-bold px-4 py-2 rounded-full text-xs flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>업데이트 됨</span>
                   </div>
                   
                   <div className="flex flex-col gap-4">
@@ -111,9 +119,9 @@ const Hero = () => {
                         <div className="absolute top-0 left-0 bottom-0 w-12 bg-brand-50 flex items-start justify-center pt-6 text-brand-500 font-black text-2xl border-r border-brand-100">
                            AI
                         </div>
-                        <p className="text-surface-900 font-bold text-[17px] leading-relaxed">
+                        <motion.p animate={{ y: [0, -3, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }} className="text-surface-900 font-bold text-[17px] leading-relaxed">
                           "카카오 간편 로그인이 개발 서버에 연동 완료되었습니다.<br/>기존 이메일 가입 유저와의 데이터 통합 테스트도 정상 통과했습니다."
-                        </p>
+                        </motion.p>
                      </motion.div>
                   </div>
                </div>
@@ -130,7 +138,7 @@ const Hero = () => {
                      지연 확률
                      <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
                   </h4>
-                  <div className="text-[80px] font-extrabold mb-2 z-10 tracking-tighter leading-none">0<span className="text-4xl font-bold ml-1">%</span></div>
+                  <motion.div key={delayPercent} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", stiffness: 200, damping: 20 }} className="text-[80px] font-extrabold mb-2 z-10 tracking-tighter leading-none">{delayPercent}<span className="text-4xl font-bold ml-1">%</span></motion.div>
                   <p className="text-brand-100 text-[15px] leading-relaxed z-10 font-medium">핵심 인력의 코드 반영 빈도를 분석한 결과, 일정은 완벽하게 준수될 예정입니다.</p>
                </motion.div>
 

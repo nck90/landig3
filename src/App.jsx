@@ -13,6 +13,7 @@ import CTA from './components/sections/CTA';
 import LogoMarquee from './components/sections/LogoMarquee';
 import Preloader from './components/sections/Preloader';
 import CustomCursor from './components/layout/CustomCursor';
+import Playground from './components/sections/Playground';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <PainPoints />
         <HowItWorks />
         <Features />
+        <Playground />
         <CaseStudies />
         <Offer />
         <Pricing />

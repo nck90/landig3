@@ -1,10 +1,11 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const CTA = () => {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6 relative">
-        <div className="bg-brand-500 rounded-[48px] p-12 md:p-24 text-center text-white relative overflow-hidden toss-shadow-hover">
+        <div className="bg-gradient-to-br from-brand-500 via-brand-600 to-indigo-600 rounded-[48px] p-12 md:p-24 text-center text-white relative overflow-hidden toss-shadow-hover animate-mesh-bg bg-[length:200%_200%]">
         
         {/* Abstract Background Elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
@@ -23,9 +24,13 @@ const CTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="w-full sm:w-auto px-10 py-5 bg-white text-brand-600 rounded-full font-bold text-xl hover:scale-105 active:scale-95 transition-transform shadow-[0_10px_30px_rgba(0,0,0,0.1)]">
+            <motion.button 
+              animate={{ rotate: [0, -1.5, 1.5, -1.5, 0] }}
+              transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 3 }}
+              className="w-full sm:w-auto px-10 py-5 bg-white text-brand-600 rounded-full font-bold text-xl hover:scale-105 active:scale-95 transition-transform shadow-[0_10px_30px_rgba(0,0,0,0.1)]"
+            >
               선착순 1:1 기획 진단 받기
-            </button>
+            </motion.button>
             <button className="w-full sm:w-auto px-10 py-5 bg-brand-600 text-white rounded-full font-bold text-xl hover:bg-brand-700 transition-colors">
               14일 무료 체험 시작
             </button>

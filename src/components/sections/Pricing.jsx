@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Pricing = () => {
   const [isAnnual, setIsAnnual] = useState(true);
@@ -51,9 +51,18 @@ const Pricing = () => {
             </div>
             <div className="mb-10">
               <div className="flex items-end gap-2">
-                <span className="text-5xl font-extrabold tracking-tighter">
-                  {isAnnual ? '39,000' : '49,000'}
-                </span>
+                <AnimatePresence mode="wait">
+                  <motion.span 
+                    key={isAnnual ? 'annual' : 'monthly'}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.3 }}
+                    className="text-5xl font-extrabold tracking-tighter"
+                  >
+                    {isAnnual ? '39,000' : '49,000'}
+                  </motion.span>
+                </AnimatePresence>
                 <span className="text-xl font-medium text-surface-500 pb-1">원 / 월</span>
               </div>
             </div>
@@ -88,7 +97,10 @@ const Pricing = () => {
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className="bg-brand-900 rounded-[40px] p-12 toss-shadow-hover relative flex flex-col overflow-hidden text-white border border-brand-800"
           >
-             <div className="absolute top-0 right-0 px-6 py-2 bg-brand-500 text-white font-bold text-sm tracking-widest rounded-bl-3xl">RECOMMENDED</div>
+             <div className="absolute top-0 right-0 px-6 py-2 bg-brand-500 text-white font-bold text-sm tracking-widest rounded-bl-3xl overflow-hidden">
+               <span className="relative z-10">RECOMMENDED</span>
+               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>
+             </div>
              
              {/* Glow */}
              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[300px] max-h-[300px] bg-brand-500/20 blur-[80px] rounded-full z-0"></div>
@@ -99,9 +111,18 @@ const Pricing = () => {
             </div>
             <div className="mb-10 relative z-10">
               <div className="flex items-end gap-2">
-                <span className="text-5xl font-extrabold tracking-tighter">
-                  {isAnnual ? '129,000' : '159,000'}
-                </span>
+                <AnimatePresence mode="wait">
+                  <motion.span 
+                    key={isAnnual ? 'annual2' : 'monthly2'}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.3 }}
+                    className="text-5xl font-extrabold tracking-tighter"
+                  >
+                    {isAnnual ? '129,000' : '159,000'}
+                  </motion.span>
+                </AnimatePresence>
                 <span className="text-xl font-medium text-brand-300 pb-1">원 / 월</span>
               </div>
             </div>
