@@ -71,10 +71,10 @@ const HowItWorks = () => {
             <div className="w-64 h-64 bg-white rounded-full toss-shadow flex items-center justify-center p-8 mb-10 border border-surface-200">
                <div className="flex flex-col items-center gap-4 w-full">
                   <div className="w-full h-8 bg-surface-100 rounded-lg"></div>
-                  <div className="w-full h-24 bg-surface-100 rounded-lg flex items-center justify-center text-xs text-surface-400 font-bold border border-brand-200 border-dashed">UI Snapshot</div>
+                  <div className="w-full h-24 bg-surface-100 rounded-lg flex items-center justify-center text-xs text-surface-400 font-bold border border-brand-200 border-dashed">실제 완성 화면</div>
                </div>
             </div>
-            <h4 className="text-2xl font-extrabold heading-tight mb-4">3. С냅샷 시각화 확인</h4>
+            <h4 className="text-2xl font-extrabold heading-tight mb-4">3. 실제 완성 화면 확인</h4>
             <p className="text-surface-500 font-medium leading-relaxed">완성된 결과물을 실제 화면 이미지로<br/>제공받아, 직관적으로 검수합니다.</p>
           </motion.div>
 

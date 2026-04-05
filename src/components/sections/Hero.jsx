@@ -35,7 +35,7 @@ const Hero = () => {
           className="text-xl md:text-2xl text-surface-500 mb-12 subheading-tight max-w-3xl mx-auto font-medium"
         >
           기능이 개발되는 즉시, AI가 진행 상황을 일상어로 통역해 알려드립니다.<br className="hidden md:block"/>
-          결과를 스냅샷 이미지로 직접 확인하는 가장 직관적인 소통.
+          결과를 실제 앱 화면 캡처본으로 직접 확인하는 직관적인 소통.
         </motion.p>
 
         <motion.div 

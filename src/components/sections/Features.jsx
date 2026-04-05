@@ -38,7 +38,7 @@ const Features = () => {
                  <div className="w-full bg-white rounded-3xl toss-shadow-hover p-6 border border-surface-200 relative overflow-hidden">
                    <div className="text-xs font-bold text-surface-400 mb-4 flex justify-between relative z-10">
                      <span>Before</span>
-                     <span className="text-brand-500">After (실시간 스냅샷)</span>
+                     <span className="text-brand-500">After (완성된 화면 캡처)</span>
                    </div>
                    <div className="flex gap-4 relative z-10">
                      <div className="flex-1 h-32 bg-surface-100 rounded-xl border border-surface-200 flex flex-col items-center justify-center opacity-50">
