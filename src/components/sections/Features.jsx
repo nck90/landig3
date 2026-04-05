@@ -35,21 +35,28 @@ const Features = () => {
                </p>
              </div>
              <div className="flex-1 bg-gradient-to-br from-brand-100 to-white relative min-h-[300px] flex items-center justify-center p-10">
-                <div className="w-full bg-white rounded-3xl toss-shadow-hover p-6 border border-surface-200">
-                   <div className="text-xs font-bold text-surface-400 mb-4 flex justify-between">
+                 <div className="w-full bg-white rounded-3xl toss-shadow-hover p-6 border border-surface-200 relative overflow-hidden">
+                   <div className="text-xs font-bold text-surface-400 mb-4 flex justify-between relative z-10">
                      <span>Before</span>
                      <span className="text-brand-500">After (실시간 스냅샷)</span>
                    </div>
-                   <div className="flex gap-4">
+                   <div className="flex gap-4 relative z-10">
                      <div className="flex-1 h-32 bg-surface-100 rounded-xl border border-surface-200 flex flex-col items-center justify-center opacity-50">
                         <div className="w-12 h-4 bg-surface-300 rounded mb-2"></div>
                         <div className="w-20 h-4 bg-surface-300 rounded"></div>
                      </div>
-                     <div className="flex-1 h-32 bg-white rounded-xl border-2 border-brand-400 flex flex-col items-center justify-center toss-shadow">
+                     <div className="flex-1 h-32 bg-brand-50 rounded-xl border-2 border-brand-400 flex flex-col items-center justify-center toss-shadow">
                         <div className="w-12 h-4 bg-brand-500 rounded mb-2"></div>
-                        <div className="w-20 h-4 bg-surface-900 rounded"></div>
+                        <div className="w-24 h-4 bg-surface-900 rounded"></div>
                      </div>
                    </div>
+                   {/* Animated scanning line */}
+                   <motion.div 
+                      initial={{ left: "10%" }}
+                      animate={{ left: ["10%", "90%", "10%"] }}
+                      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                      className="absolute top-0 bottom-0 w-1 bg-brand-400 z-20 shadow-[0_0_10px_rgba(59,130,246,0.8)]"
+                   ></motion.div>
                 </div>
              </div>
           </motion.div>
@@ -104,11 +111,19 @@ const Features = () => {
                 '결제 모듈 백엔드 세팅'이라는 복잡한 개발자 로그를, '카카오 간편 로그인 작업 완료'라는 일상적인 언어로 통역해 대표님께 전달합니다.
               </p>
             </div>
-            <div className="mt-auto bg-brand-800 rounded-2xl p-6 border border-brand-700">
-               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-4 text-brand-900 font-extrabold text-xl">AI</div>
-               <div className="bg-white text-surface-900 font-bold p-4 rounded-xl text-sm leading-relaxed">
+            <div className="mt-auto bg-brand-800/80 backdrop-blur-sm rounded-3xl p-8 border border-brand-700 relative overflow-hidden">
+               {/* Decorative background glow */}
+               <div className="absolute -top-10 -right-10 w-32 h-32 bg-brand-500/30 rounded-full blur-2xl"></div>
+               
+               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 text-brand-900 font-black text-xl shadow-lg relative z-10">AI</div>
+               <motion.div 
+                 initial={{ opacity: 0, y: 10 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ delay: 0.3, duration: 0.5 }}
+                 className="bg-white text-surface-900 font-bold p-5 rounded-2xl text-[15px] leading-relaxed shadow-xl relative z-10"
+               >
                  "오늘 개발팀이 카카오 로그인 기능을 완료했습니다. 기존 이메일 가입 유저와의 데이터 통합 테스트도 정상 통과했습니다."
-               </div>
+               </motion.div>
             </div>
           </motion.div>
 
