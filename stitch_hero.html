@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#40484f",
+                        "surface-bright": "#f7f9fd",
+                        "outline-variant": "#c5c5d3",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2d3134",
+                        "surface-dim": "#d8dade",
+                        "on-primary-container": "#90a8ff",
+                        "outline": "#757682",
+                        "background": "#f7f9fd",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e6e8ec",
+                        "secondary-container": "#dce2f3",
+                        "on-background": "#191c1f",
+                        "inverse-on-surface": "#eff1f5",
+                        "primary": "#00236f",
+                        "surface-container": "#eceef2",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#a6adb5",
+                        "on-secondary-fixed-variant": "#404754",
+                        "tertiary-fixed-dim": "#c0c7d0",
+                        "secondary-fixed-dim": "#c0c7d6",
+                        "on-tertiary-fixed": "#151c23",
+                        "tertiary-container": "#3a4148",
+                        "secondary": "#585f6c",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#00164e",
+                        "on-primary-fixed-variant": "#264191",
+                        "on-surface": "#191c1f",
+                        "on-secondary-fixed": "#151c27",
+                        "surface-tint": "#4059aa",
+                        "surface-container-low": "#f2f4f8",
+                        "tertiary": "#242b32",
+                        "surface-variant": "#e0e2e6",
+                        "on-secondary-container": "#5e6572",
+                        "primary-container": "#1e3a8a",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#dce1ff",
+                        "surface": "#f7f9fd",
+                        "on-surface-variant": "#444651",
+                        "tertiary-fixed": "#dce3ec",
+                        "inverse-primary": "#b6c4ff",
+                        "surface-container-highest": "#e0e2e6",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "secondary-fixed": "#dce2f3",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .tonal-layering { background-color: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-white text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-primary">Commitly</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-slate-600 font-manrope text-base font-medium hover:text-primary transition-colors duration-200" href="#">해결하는 문제</a>
+<a class="text-slate-600 font-manrope text-base font-medium hover:text-primary transition-colors duration-200" href="#">솔루션</a>
+<a class="text-slate-600 font-manrope text-base font-medium hover:text-primary transition-colors duration-200" href="#">도입 효과</a>
+</div>
+<button class="bg-primary text-white px-6 py-2.5 rounded-full font-manrope text-base font-medium hover:bg-primary-container transition-all active:scale-95">
+                무료 진단받기
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<main class="relative pt-32 pb-24 md:py-[140px] overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
+<!-- Left: Content Block (60%) -->
+<div class="w-full md:w-[60%] flex flex-col items-start">
+<span class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#eff6ff] text-primary-container text-sm font-semibold tracking-wide mb-8">
+                    B2B IT 외주 관리 솔루션
+                </span>
+<h1 class="text-5xl md:text-[56px] font-extrabold leading-[1.2] text-[#111827] mb-8 tracking-tight font-headline">
+                    IT 외주, 계약 후 3개월을 <br/>
+<span class="text-primary-container">기도만</span> 하고 계신가요?
+                </h1>
+<p class="text-lg md:text-[18px] text-[#6b7280] leading-[1.7] mb-12 max-w-2xl font-body">
+                    말뿐인 보고서는 이제 그만. 개발자의 실제 코드 활동을 <br class="hidden md:block"/>
+                    AI가 비개발자 언어로 자동 번역하여 실시간 진척도를 공유합니다.
+                </p>
+<div class="flex flex-wrap gap-4 mb-16">
+<button class="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-container transition-all scale-100 active:scale-95 shadow-lg shadow-primary/10">
+                        도입 상담 신청
+                    </button>
+<button class="bg-white text-slate-600 border border-slate-200 px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-50 transition-all scale-100 active:scale-95">
+                        소개서 다운로드
+                    </button>
+</div>
+<!-- Trust Metrics -->
+<div class="flex items-center gap-8 py-6 px-1 border-t border-slate-100 w-full md:w-auto">
+<div class="flex flex-col">
+<span class="text-sm text-slate-400 font-medium mb-1">누적 프로젝트</span>
+<span class="text-xl font-bold text-[#111827]">700+</span>
+</div>
+<div class="h-8 w-px bg-slate-200"></div>
+<div class="flex flex-col">
+<span class="text-sm text-slate-400 font-medium mb-1">도입 기업</span>
+<span class="text-xl font-bold text-[#111827]">142개</span>
+</div>
+<div class="h-8 w-px bg-slate-200"></div>
+<div class="flex flex-col">
+<span class="text-sm text-slate-400 font-medium mb-1">보고 시간</span>
+<span class="text-xl font-bold text-primary-container">80% 단축</span>
+</div>
+</div>
+</div>
+<!-- Right: Dashboard Mockup (40%) -->
+<div class="w-full md:w-[40%] relative">
+<!-- Tonal Layering Concept -->
+<div class="bg-surface-container-lowest rounded-lg shadow-[0_32px_64px_-12px_rgba(0,35,111,0.08)] p-8 border border-slate-50 relative z-10">
+<div class="flex items-center justify-between mb-10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">analytics</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface">커머스 앱 고도화</h3>
+<p class="text-xs text-on-surface-variant">진행률 64.2% • 정상</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-300">more_horiz</span>
+</div>
+<!-- Metrics Row -->
+<div class="grid grid-cols-2 gap-4 mb-10">
+<div class="p-4 rounded-xl bg-surface-container-low border border-slate-100/50">
+<p class="text-xs text-on-surface-variant mb-1">주간 커밋량</p>
+<p class="text-xl font-bold text-primary">1,240 <span class="text-sm font-normal text-slate-400">Lines</span></p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-slate-100/50">
+<p class="text-xs text-on-surface-variant mb-1">코드 안정성</p>
+<p class="text-xl font-bold text-[#059669]">98%</p>
+</div>
+</div>
+<!-- AI Translation Card -->
+<div class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary-container text-sm" data-weight="fill">auto_awesome</span>
+<span class="text-xs font-bold text-primary-container uppercase tracking-widest">AI Commit Insight</span>
+</div>
+<div class="p-5 rounded-2xl bg-primary text-white leading-relaxed">
+<p class="text-[15px] font-medium">
+                                "결제 모듈의 보안 취약점을 개선하고, 장바구니 로딩 속도를 기존 대비 1.2초 단축하는 코드가 반영되었습니다."
+                            </p>
+<div class="mt-4 flex items-center justify-between text-[11px] opacity-70">
+<span>오늘 오후 2:14</span>
+<span class="bg-white/20 px-2 py-0.5 rounded-full">비개발자용 요약</span>
+</div>
+</div>
+</div>
+<!-- Decorative elements -->
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
+</div>
+<!-- Background Ghost Card -->
+<div class="absolute -top-6 -left-6 w-full h-full bg-slate-50 rounded-lg -z-10 border border-slate-100"></div>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full pt-16 pb-8 bg-slate-50">
+<div class="flex flex-col md:flex-row justify-between items-start px-8 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col gap-4">
+<div class="text-xl font-bold text-blue-900">Commitly</div>
+<p class="text-slate-500 font-manrope text-sm leading-relaxed">© 2024 Commitly. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 text-sm font-manrope hover:underline decoration-2 underline-offset-4" href="#">회사 소개</a>
+<a class="text-slate-500 text-sm font-manrope hover:underline decoration-2 underline-offset-4" href="#">개인정보처리방침</a>
+<a class="text-slate-500 text-sm font-manrope hover:underline decoration-2 underline-offset-4" href="#">이용약관</a>
+<a class="text-slate-500 text-sm font-manrope hover:underline decoration-2 underline-offset-4" href="#">문의하기</a>
+</div>
+</div>
+</footer>
+</body></html>

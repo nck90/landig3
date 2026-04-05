@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#dce1ff",
+                        "on-primary-fixed-variant": "#264191",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#444651",
+                        "surface-dim": "#d8dade",
+                        "surface": "#f7f9fd",
+                        "on-primary-container": "#90a8ff",
+                        "tertiary-fixed": "#dce3ec",
+                        "on-secondary-container": "#5e6572",
+                        "on-secondary-fixed-variant": "#404754",
+                        "surface-bright": "#f7f9fd",
+                        "secondary-container": "#dce2f3",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "surface-tint": "#4059aa",
+                        "on-tertiary-fixed": "#151c23",
+                        "surface-container-low": "#f2f4f8",
+                        "inverse-primary": "#b6c4ff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#eff1f5",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#40484f",
+                        "outline-variant": "#c5c5d3",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#c0c7d0",
+                        "surface-variant": "#e0e2e6",
+                        "on-primary-fixed": "#00164e",
+                        "on-background": "#191c1f",
+                        "secondary-fixed-dim": "#c0c7d6",
+                        "surface-container-high": "#e6e8ec",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e0e2e6",
+                        "on-secondary-fixed": "#151c27",
+                        "inverse-surface": "#2d3134",
+                        "tertiary": "#242b32",
+                        "on-tertiary-container": "#a6adb5",
+                        "tertiary-container": "#3a4148",
+                        "primary-container": "#1e3a8a",
+                        "background": "#f7f9fd",
+                        "surface-container": "#eceef2",
+                        "secondary-fixed": "#dce2f3",
+                        "primary": "#00236f",
+                        "secondary": "#585f6c",
+                        "outline": "#757682",
+                        "on-surface": "#191c1f",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fd; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- Final CTA Section -->
+<section class="w-full bg-primary-container py-[120px] px-8">
+<div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+<h2 class="text-[40px] font-extrabold text-white leading-tight tracking-tight mb-6">
+                지금 진행 중인 우리 프로젝트, 정말 문제 없는지 확인해보세요.
+            </h2>
+<p class="text-lg text-white/80 max-w-2xl leading-relaxed mb-10">
+                단 3분의 세팅으로 GitHub를 연동하고, 현재 개발이 올바른 방향으로 가고 있는지 데이터를 통해 객관적인 진단을 받아보세요.
+            </p>
+<div class="flex flex-wrap justify-center gap-6 mb-12">
+<div class="flex items-center gap-2 text-white font-medium">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-[14px]">카드 등록 없는 14일 무료 체험</span>
+</div>
+<div class="flex items-center gap-2 text-white font-medium">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-[14px]">과거 Commit 기반 무료 분석</span>
+</div>
+<div class="flex items-center gap-2 text-white font-medium">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-[14px]">무상 도입 컨설팅 1회 지원</span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center bg-white text-primary-container px-10 py-5 rounded-full font-bold text-lg hover:bg-surface-container-low transition-all mb-4" href="#">
+                무료 진단 시작하기 →
+            </a>
+<p class="text-white/60 text-[14px] font-medium">
+                빠르고 복잡한 절차 없이, 가입 즉시 대시보드가 생성됩니다.
+            </p>
+</div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-slate-50 dark:bg-slate-900 py-16">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+<!-- Brand Identity -->
+<div class="flex flex-col gap-4">
+<span class="text-xl font-black text-blue-900 dark:text-blue-400">Commitly.</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                    AI 기반 IT 외주 프로젝트 매니저<br/>
+                    데이터 기반의 투명한 개발 생태계를 만듭니다.
+                </p>
+</div>
+<!-- Links Column 1: 서비스 -->
+<div>
+<h4 class="text-blue-900 dark:text-blue-400 font-bold mb-6">서비스</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm" href="#">서비스 소개</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm" href="#">기능 상세</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm" href="#">요금 안내</a></li>
+</ul>
+</div>
+<!-- Links Column 2: 고객지원 -->
+<div>
+<h4 class="text-blue-900 dark:text-blue-400 font-bold mb-6">고객지원</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm" href="#">고객 지원</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm" href="#">자주 묻는 질문</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm" href="#">문의하기</a></li>
+</ul>
+</div>
+<!-- Links Column 3: 법적고지 -->
+<div>
+<h4 class="text-blue-900 dark:text-blue-400 font-bold mb-6">법적고지</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm" href="#">이용약관</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm font-bold text-blue-900 dark:text-blue-400" href="#">개인정보처리방침</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-sm" href="#">보안 정책</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400 text-xs">
+                © 2024 Commitly. All rights reserved.
+            </p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-blue-900 transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">language</span>
+</a>
+<a class="text-slate-400 hover:text-blue-900 transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">hub</span>
+</a>
+<a class="text-slate-400 hover:text-blue-900 transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">corporate_fare</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

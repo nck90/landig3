@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#757682",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#eceef2",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#c0c7d6",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#dce3ec",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f7f9fd",
+                        "outline-variant": "#c5c5d3",
+                        "on-primary-fixed": "#00164e",
+                        "error-container": "#ffdad6",
+                        "surface": "#f7f9fd",
+                        "secondary-fixed": "#dce2f3",
+                        "inverse-surface": "#2d3134",
+                        "primary": "#00236f",
+                        "tertiary": "#242b32",
+                        "primary-fixed": "#dce1ff",
+                        "surface-variant": "#e0e2e6",
+                        "primary-container": "#1e3a8a",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#264191",
+                        "on-tertiary-container": "#a6adb5",
+                        "inverse-primary": "#b6c4ff",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "on-tertiary-fixed-variant": "#40484f",
+                        "error": "#ba1a1a",
+                        "secondary": "#585f6c",
+                        "surface-container-high": "#e6e8ec",
+                        "surface-tint": "#4059aa",
+                        "secondary-container": "#dce2f3",
+                        "surface-container-low": "#f2f4f8",
+                        "on-surface-variant": "#444651",
+                        "on-secondary-fixed-variant": "#404754",
+                        "on-primary-container": "#90a8ff",
+                        "surface-dim": "#d8dade",
+                        "surface-bright": "#f7f9fd",
+                        "on-background": "#191c1f",
+                        "tertiary-fixed-dim": "#c0c7d0",
+                        "on-secondary-container": "#5e6572",
+                        "on-tertiary-fixed": "#151c23",
+                        "on-surface": "#191c1f",
+                        "inverse-on-surface": "#eff1f5",
+                        "surface-container-highest": "#e0e2e6",
+                        "tertiary-container": "#3a4148",
+                        "on-secondary-fixed": "#151c27",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .tonal-shift-surface-low { background-color: rgba(242, 244, 248, 0.8); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl transition-colors">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-blue-900">Commitly</div>
+<div class="hidden md:flex items-center space-gap-8 gap-x-8">
+<a class="text-slate-500 font-manrope text-base font-medium hover:text-blue-800 transition-colors" href="#">Platform</a>
+<a class="text-blue-900 border-b-2 border-blue-900 pb-1 font-manrope text-base font-medium" href="#">Features</a>
+<a class="text-slate-500 font-manrope text-base font-medium hover:text-blue-800 transition-colors" href="#">Case Studies</a>
+<a class="text-slate-500 font-manrope text-base font-medium hover:text-blue-800 transition-colors" href="#">Pricing</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2 text-slate-500 font-medium hover:text-blue-900 transition-all">Login</button>
+<button class="px-6 py-2 bg-primary text-on-primary rounded-full font-medium hover:bg-primary-container transition-all">Get Started</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Proof / Features Section -->
+<section class="bg-white py-[140px]">
+<div class="max-w-7xl mx-auto px-8">
+<!-- Section Header -->
+<div class="text-center mb-24">
+<span class="inline-flex items-center px-4 py-1.5 rounded-full bg-surface-container-low text-primary text-sm font-bold tracking-wider mb-6">
+                        증명된 솔루션
+                    </span>
+<h2 class="text-[40px] leading-tight font-bold text-on-surface mb-6">
+                        기능이 아니라 명확한 <span class="text-primary-container">결과</span>를 드립니다
+                    </h2>
+<p class="text-on-surface-variant text-lg max-w-2xl mx-auto font-body">
+                        주관적 판단을 배제하고 코드 레벨의 데이터에 기반하여 프로젝트를 진단합니다.
+                    </p>
+</div>
+<!-- Feature Blocks Container -->
+<div class="space-y-40">
+<!-- Feature Block 1: Text Left, Visual Right -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-16">
+<div class="w-full md:w-1/2">
+<div class="w-12 h-12 flex items-center justify-center rounded-2xl bg-surface-container-low text-primary mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="task_alt">task_alt</span>
+</div>
+<h3 class="text-3xl font-bold text-on-surface mb-6 leading-snug">
+                                수작업 주간 보고서 <span class="text-primary-container">80% 단축</span>
+</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                                GitHub에 코드를 올리기만 하면 끝. AI가 PR을 자동 분석해 비개발자용 결과 중심 요약을 생성합니다.
+                            </p>
+<div class="flex gap-4">
+<div class="bg-surface-container-low px-4 py-2 rounded-lg text-sm font-medium text-secondary">#자동리포트</div>
+<div class="bg-surface-container-low px-4 py-2 rounded-lg text-sm font-medium text-secondary">#AI요약</div>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="bg-surface-container-low rounded-lg p-8 overflow-hidden shadow-sm">
+<div class="bg-white rounded-xl shadow-sm p-6 space-y-4">
+<div class="flex justify-between items-center border-b border-surface-container-low pb-3">
+<div class="font-bold text-on-surface">Weekly Dev Summary</div>
+<div class="text-xs text-on-surface-variant">2024.10.24</div>
+</div>
+<div class="space-y-4">
+<div class="flex gap-3">
+<div class="w-1.5 h-1.5 mt-2 rounded-full bg-primary shrink-0"></div>
+<div>
+<p class="text-sm font-bold text-on-surface">결제 모듈 안정성 강화</p>
+<p class="text-xs text-on-surface-variant mt-1">Stripe Webhook 예외 처리 로직 보완 및 테스트 코드 95% 달성</p>
+</div>
+</div>
+<div class="flex gap-3">
+<div class="w-1.5 h-1.5 mt-2 rounded-full bg-primary shrink-0"></div>
+<div>
+<p class="text-sm font-bold text-on-surface">사용자 대시보드 렌더링 최적화</p>
+<p class="text-xs text-on-surface-variant mt-1">Lighthouse 점수 72점에서 94점으로 개선 (이미지 레이지 로딩 적용)</p>
+</div>
+</div>
+<div class="flex gap-3 opacity-60">
+<div class="w-1.5 h-1.5 mt-2 rounded-full bg-primary shrink-0"></div>
+<div>
+<p class="text-sm font-bold text-on-surface">백엔드 API 보안 패치</p>
+<p class="text-xs text-on-surface-variant mt-1">JWT 인증 만료 로직 수정 및 무차별 대입 공격 방어 추가</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Feature Block 2: Visual Left, Text Right -->
+<div class="flex flex-col md:flex-row-reverse items-center justify-between gap-16">
+<div class="w-full md:w-1/2">
+<div class="w-12 h-12 flex items-center justify-center rounded-2xl bg-surface-container-low text-primary mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="shield_with_heart">shield_with_heart</span>
+</div>
+<h3 class="text-3xl font-bold text-on-surface mb-6 leading-snug">
+                                지연 리스크 <span class="text-primary-container">사전 감지</span> 방어
+                            </h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                                커밋 빈도, 마일스톤 달성 속도를 종합 분석하여 프로젝트 헬스 스코어를 산출합니다.
+                            </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span>
+<span>실시간 프로젝트 건강도 트래킹</span>
+</li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle">check_circle</span>
+<span>일정 지연 가능성 AI 예측 알림</span>
+</li>
+</ul>
+</div>
+<div class="w-full md:w-1/2">
+<div class="bg-surface-container-low rounded-lg p-8 shadow-sm">
+<div class="bg-white rounded-xl shadow-sm p-8">
+<div class="flex items-end justify-between mb-8">
+<div>
+<p class="text-sm font-medium text-on-surface-variant mb-1">Health Score</p>
+<p class="text-4xl font-extrabold text-primary">92<span class="text-xl font-bold">/100</span></p>
+</div>
+<div class="text-right">
+<span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">Excellent</span>
+</div>
+</div>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between text-xs font-bold mb-2">
+<span class="text-on-surface">코드 변동</span>
+<span class="text-primary">85%</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full">
+<div class="h-2 bg-primary rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold mb-2">
+<span class="text-on-surface">커밋 주기</span>
+<span class="text-primary">92%</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full">
+<div class="h-2 bg-primary rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold mb-2">
+<span class="text-on-surface">오픈 예측</span>
+<span class="text-primary">78%</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full">
+<div class="h-2 bg-primary rounded-full" style="width: 78%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Feature Block 3: Text Left, Visual Right -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-16">
+<div class="w-full md:w-1/2">
+<div class="w-12 h-12 flex items-center justify-center rounded-2xl bg-surface-container-low text-primary mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="bolt">bolt</span>
+</div>
+<h3 class="text-3xl font-bold text-on-surface mb-6 leading-snug">
+                                AI 기획 구조화로 <span class="text-primary-container">모호함 0%</span>
+</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                                RFP나 기획/PDF를 업로드하면 AI가 10초 이내에 핵심 기능과 마일스톤 단위로 파싱합니다.
+                            </p>
+<button class="flex items-center gap-2 text-primary font-bold hover:underline">
+                                자세히 알아보기
+                                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="w-full md:w-1/2">
+<div class="bg-surface-container-low rounded-lg p-10 flex flex-col items-center justify-center space-y-6">
+<!-- Process Flow Diagram -->
+<div class="flex flex-col items-center w-full max-w-sm">
+<div class="w-20 h-20 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="picture_as_pdf">picture_as_pdf</span>
+</div>
+<p class="text-xs font-bold text-on-surface mb-4">Requirement PDF</p>
+<div class="h-8 w-px bg-primary-container/20 relative">
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-primary-container"></div>
+</div>
+<div class="w-full bg-primary py-3 rounded-full flex items-center justify-center gap-3 my-4">
+<span class="material-symbols-outlined text-white text-xl animate-pulse" data-icon="neurology">neurology</span>
+<span class="text-white text-sm font-bold">AI Parsing Engines</span>
+</div>
+<div class="h-8 w-px bg-primary-container/20 relative">
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-primary-container"></div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-4 w-full">
+<div class="bg-white p-3 rounded-xl shadow-sm border border-surface-container text-center">
+<p class="text-[10px] text-on-surface-variant font-bold mb-1">Milestone 01</p>
+<p class="text-xs font-bold text-on-surface">User Auth</p>
+</div>
+<div class="bg-white p-3 rounded-xl shadow-sm border border-surface-container text-center">
+<p class="text-[10px] text-on-surface-variant font-bold mb-1">Milestone 02</p>
+<p class="text-xs font-bold text-on-surface">Data Grid</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-slate-50 border-t border-surface-container-low w-full py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-blue-900 mb-2">Commitly</div>
+<p class="text-slate-500 font-manrope text-sm">© 2024 Commitly Inc. All rights reserved.</p>
+</div>
+<div class="flex gap-x-8">
+<a class="text-slate-500 font-manrope text-sm hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="text-slate-500 font-manrope text-sm hover:underline transition-all" href="#">Terms of Service</a>
+<a class="text-slate-500 font-manrope text-sm hover:underline transition-all" href="#">Security</a>
+<a class="text-slate-500 font-manrope text-sm hover:underline transition-all" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
